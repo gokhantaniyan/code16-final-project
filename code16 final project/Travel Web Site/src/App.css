@@ -1,0 +1,13 @@
+.app-background-light{
+    background-color: white;
+    color: black;
+}
+
+.app-background-dark{
+    background-image: url(/src/Images/shillong-2847249\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+

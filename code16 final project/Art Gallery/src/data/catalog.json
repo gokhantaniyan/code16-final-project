@@ -1,0 +1,129 @@
+[
+    {
+        "id": 1,
+        "name": "Alex Van",
+        "price": 150.00,
+        "description": "Generation NEXT, 2022",
+        "image": "Images/Rectangle 26.svg"
+      },
+      {
+        "id": 2,
+        "name": "Inna Sorokina",
+        "price": 100.00,
+        "description": "Himalayas, 2020",
+        "image": "Images/Rectangle 5.svg"
+      },
+      {
+        "id": 3,
+        "name": "Klim Petrov",
+        "price": 100.00,
+        "description": "Expectation, 2019",
+        "image": "Images/Rectangle 6.svg"
+      },
+      {
+        "id": 4,
+        "name": "Ann Fox",
+        "price": 80.00,
+        "description": "Brut, 2022",
+        "image": "Images/Rectangle 15.svg"
+      },
+      {
+        "id": 5,
+        "name": "Alex Van",
+        "price": 250.00,
+        "description": "Purity, 2022",
+        "image": "Images/Rectangle 9.svg"
+      },
+      {
+        "id": 6,
+        "name": "Antony Gribov",
+        "price": 190.00,
+        "description": "Confusion, 2022",
+        "image": "Images/Rectangle 8.svg"
+      },
+      {
+        "id": 7,
+        "name": "Alex Van",
+        "price": 150.00,
+        "description": "Violin, 2022",
+        "image": "Images/картина 1.svg"
+      },
+      {
+        "id": 8,
+        "name": "Oleg Kim",
+        "price": 150.00,
+        "description": "Anita, 2023",
+        "image": "Images/Rectangle 11.svg"
+      },
+      {
+        "id": 9,
+        "name": "Oleg Kim",
+        "price": 100.00,
+        "description": "Nina, 2022",
+        "image": "Images/Rectangle 12.svg"
+      },
+      {
+        "id": 10,
+        "name": "Inna Sholts",
+        "price": 170.00,
+        "description": "Thoughts, 2019",
+        "image": "Images/Rectangle 29.svg"
+      },
+      {
+        "id": 11,
+        "name": "Ann Fox",
+        "price": 200.00,
+        "description": "I'm different, 2022",
+        "image": "Images/Rectangle 19.svg"
+      },
+      {
+        "id": 12,
+        "name": "Nik Sans",
+        "price": 190.00,
+        "description": "Beilive, 2022",
+        "image": "Images/Rectangle 17.svg"
+      },
+      {
+        "id": 13,
+        "name": "Serjey Matushkin",
+        "price": 300.00,
+        "description": "The Buddha, 2022",
+        "image": "Images/Rectangle 23.svg"
+      },
+      {
+        "id": 14,
+        "name": "Antony Gribov",
+        "price": 180.00,
+        "description": "Heraldry, 2017",
+        "image": "Images/Rectangle 18.svg"
+      },
+      {
+        "id": 15,
+        "name": "BLO",
+        "price": 150.00,
+        "description": "Fire, 2018",
+        "image": "Images/Rectangle 22.svg"
+      },
+      {
+        "id": 16,
+        "name": "Ann Fox",
+        "price": 195.00,
+        "description": "Loneliness, 2020",
+        "image": "Images/Rectangle 24.svg"
+      },
+      {
+        "id": 17,
+        "name": "Oleg Kim",
+        "price": 100.00,
+        "description": "Footprints, 2022",
+        "image": "Images/Rectangle 21.svg"
+      },
+      {
+        "id": 18,
+        "name": "Nik Sans",
+        "price": 300.00,
+        "description": "Approval, 2019",
+        "image": "Images/Rectangle 25.svg"
+      }
+
+]
