@@ -168,7 +168,7 @@ function Home(props) {
               marginLeft: 70, 
               background: '#FC8512', 
               borderRadius: 10, 
-
+              color: '#FFFFFF',
               justifyContent: 'center', 
               alignItems: 'center' }}
             >
@@ -191,7 +191,8 @@ function Home(props) {
           <div className="container">
             <div className="row">
               <img style={{
-                marginTop: 130, 
+                marginTop: 130,
+                marginLeft: 70,
                 width: 300, 
                 position: 'absolute'}} 
                 src="assets/Rectangle 60 image.svg" 
@@ -210,7 +211,7 @@ function Home(props) {
             src= "assets/Big-image.svg" 
             alt="placeholder" 
           />
-          <img className="Rectangle13Image" style={{ 
+          <img  style={{ 
             width: 104, 
             height: 305, 
             left: 478, 

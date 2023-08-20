@@ -25,7 +25,6 @@ function News(props) {
                 <img src={product.image}  />
                 <div className="card-body">
                   <p className="mb-0 d-flex justify-content-between" style={{
-                    color: "#10101C", 
                     fontFamily: "Nunito Sans", 
                     fontSize: "16px", 
                     fontStyle: "normal", 
@@ -39,8 +38,8 @@ function News(props) {
                       </svg>
                     </span>
                   </p>
-                  <p className="mb-0"  style={{color: "#10101C", fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
-                  <p style={{color: "#10101C", fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
+                  <p className="mb-0"  style={{fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
+                  <p style={{fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
                 </div>
               </div>
             </div>

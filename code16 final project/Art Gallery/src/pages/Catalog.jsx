@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// import './Catalog.css'
 
 function Catalog(props) {
   const [products, setProducts] = useState([]);
@@ -71,8 +72,9 @@ function Catalog(props) {
               }
             />
           </div>
+          {/* Size filter start */}
           <div style={{borderBottom: "1px solid"}}>
-            <label htmlFor="sizeFilter">To size:</label><br />
+            <label className="filter-header" htmlFor="sizeFilter">To size</label><br />
             <label>
               <input
                 type="checkbox"
@@ -80,7 +82,7 @@ function Catalog(props) {
                 checked={filters.size === "small"}
                 onChange={() => setFilters({ ...filters, size: filters.size === "small" ? "" : "small" })}
               />
-              Small
+              <span className="filter-item">Up to 40 cm</span>
             </label><br />
             <label>
               <input
@@ -89,7 +91,7 @@ function Catalog(props) {
                 checked={filters.size === "medium"}
                 onChange={() => setFilters({ ...filters, size: filters.size === "medium" ? "" : "medium" })}
               />
-              Medium
+              <span className="filter-item">40 - 100 cm</span>
             </label><br />
             <label>
               <input
@@ -98,11 +100,13 @@ function Catalog(props) {
                 checked={filters.size === "large"}
                 onChange={() => setFilters({ ...filters, size: filters.size === "large" ? "" : "large" })}
               />
-              Large
+              <span className="filter-item">Over 100 cm</span>
             </label>
           </div>
+          {/* Size filter end */}
+          {/* Genre filter start */}
           <div style={{borderBottom: "1px solid"}}>
-            <label htmlFor="genreFilter">By genre:</label><br />
+            <label className="filter-header" htmlFor="genreFilter">By genre</label><br />
             <label>
               <input
                 type="checkbox"
@@ -110,7 +114,7 @@ function Catalog(props) {
                 checked={filters.size === "abstraction"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "abstraction" ? "" : "abstraction" })}
               />
-              Abstraction
+              <span className="filter-item">Abstraction</span>
             </label><br />
             <label>
               <input
@@ -119,7 +123,7 @@ function Catalog(props) {
                 checked={filters.size === "scenery"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "scenery" ? "" : "scenery" })}
               />
-              Scenery
+              <span className="filter-item">Scenery</span>
             </label><br />
             <label>
               <input
@@ -128,7 +132,7 @@ function Catalog(props) {
                 checked={filters.genre === "stillLife"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "stillLife" ? "" : "stillLife" })}
               />
-              Still life
+              <span className="filter-item">Still life</span>
             </label><br />
             <label>
               <input
@@ -137,7 +141,7 @@ function Catalog(props) {
                 checked={filters.genre === "portrait"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "portrait" ? "" : "portrait" })}
               />
-              Portrait
+              <span className="filter-item">Portrait</span>
             </label><br />
             <label>
               <input
@@ -146,7 +150,7 @@ function Catalog(props) {
                 checked={filters.genre === "3dPaintings"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "3dPaintings" ? "" : "3dPaintings" })}
               />
-              3D paintings
+            <span className="filter-item">3D paintings</span>
             </label><br />
             <label>
               <input
@@ -155,7 +159,7 @@ function Catalog(props) {
                 checked={filters.genre === "prints"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "prints" ? "" : "prints" })}
               />
-              Prints
+              <span className="filter-item">Prints</span>
             </label><br />
             <label>
               <input
@@ -164,7 +168,7 @@ function Catalog(props) {
                 checked={filters.genre === "posters"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "posters" ? "" : "posters" })}
               />
-              Posters
+              <span className="filter-item">Posters</span>
             </label><br />
             <label>
               <input
@@ -173,9 +177,169 @@ function Catalog(props) {
                 checked={filters.genre === "collages"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "collages" ? "" : "collages" })}
               />
-              Collages
+              <span className="filter-item">Collages</span>
             </label>
           </div>
+          {/* Genre filter end */}
+          {/* Material filter start */}
+          <div style={{borderBottom: "1px solid"}}>
+            <label className="filter-header" htmlFor="materialFilter">By material</label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="Acrylic"
+                checked={filters.material === "Acrylic"}
+                onChange={() => setFilters({ ...filters, material: filters.material === "Acrylic" ? "" : "Acrylic" })}
+              />
+              <span className="filter-item">Acrylic</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="oil"
+                checked={filters.material === "oil"}
+                onChange={() => setFilters({ ...filters, material: filters.material === "oil" ? "" : "oil" })}
+              />
+              <span className="filter-item">Oil</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="fluid-art"
+                checked={filters.material === "fluid-art"}
+                onChange={() => setFilters({ ...filters, material: filters.material === "fluid-art" ? "" : "fluid-art" })}
+              />
+              <span className="filter-item">Fluid Art</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="watercolor"
+                checked={filters.material === "watercolor"}
+                onChange={() => setFilters({ ...filters, material: filters.material === "watercolor" ? "" : "watercolor" })}
+              />
+              <span className="filter-item">Watercolor</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="pastel"
+                checked={filters.material === "pastel"}
+                onChange={() => setFilters({ ...filters, material: filters.material === "pastel" ? "" : "pastel" })}
+              />
+              <span className="filter-item">Pastel</span>
+            </label>
+          </div>
+          {/* Material filter end */}
+          {/* Basis filter start */}
+          <div style={{borderBottom: "1px solid"}}>
+            <label className="filter-header" htmlFor="basisFilter">By basis</label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="canvas"
+                checked={filters.basis === "canvas"}
+                onChange={() => setFilters({ ...filters, basis: filters.basis === "canvas" ? "" : "canvas" })}
+              />
+              <span className="filter-item">Canvas</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="wood"
+                checked={filters.basis === "wood"}
+                onChange={() => setFilters({ ...filters, basis: filters.basis === "wood" ? "" : "wood" })}
+              />
+              <span className="filter-item">Wood</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="cardboard"
+                checked={filters.basis === "cardboard"}
+                onChange={() => setFilters({ ...filters, basis: filters.basis === "cardboard" ? "" : "cardboard" })}
+              />
+              <span className="filter-item">Cardboard</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="art-paper"
+                checked={filters.basis === "art-paper"}
+                onChange={() => setFilters({ ...filters, basis: filters.basis === "art-paper" ? "" : "art-paper" })}
+              />
+              <span className="filter-item">Art paper</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="glass"
+                checked={filters.basis === "glass"}
+                onChange={() => setFilters({ ...filters, basis: filters.basis === "glass" ? "" : "glass" })}
+              />
+              <span className="filter-item">Glass</span>
+            </label>
+          </div>
+          {/* Basis filter end */}
+          {/* Color filter start */}
+          <div style={{borderBottom: "1px solid"}}>
+            <label className="filter-header" htmlFor="colorFilter">By color</label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="blue"
+                checked={filters.color === "blue"}
+                onChange={() => setFilters({ ...filters, color: filters.color === "blue" ? "" : "blue" })}
+              />
+              <span className="filter-item">Blue</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="red"
+                checked={filters.color === "red"}
+                onChange={() => setFilters({ ...filters, color: filters.color === "red" ? "" : "red" })}
+              />
+              <span className="filter-item">Red</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="green"
+                checked={filters.color === "green"}
+                onChange={() => setFilters({ ...filters, color: filters.color === "green" ? "" : "green" })}
+              />
+              <span className="filter-item">Green</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="gold"
+                checked={filters.color === "gold"}
+                onChange={() => setFilters({ ...filters, color: filters.color === "gold" ? "" : "gold" })}
+              />
+              <span className="filter-item">Gold</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="silver"
+                checked={filters.color === "silver"}
+                onChange={() => setFilters({ ...filters, color: filters.color === "silver" ? "" : "silver" })}
+              />
+              <span className="filter-item">Silver</span>
+            </label><br />
+            <label>
+              <input
+                type="checkbox"
+                value="beige"
+                checked={filters.color === "beige"}
+                onChange={() => setFilters({ ...filters, color: filters.color === "beige" ? "" : "beige" })}
+              />
+              <span className="filter-item">Beige</span>
+            </label>
+          </div>
+          {/* Color filter end */}
           {/* Diğer filtre seçenekleri buraya eklenir */}
         </div>
         <div className="col-sm ">
@@ -186,8 +350,7 @@ function Catalog(props) {
                   <div className="card mb-3 border-0" style={{width: "18rem"}}>
                     <img src={product.image}  />
                     <div className="card-body">
-                      <p className="mb-0 d-flex justify-content-between" style={{
-                        color: "#10101C", 
+                      <p className="mb-0 d-flex justify-content-between" style={{ 
                         fontFamily: "Nunito Sans", 
                         fontSize: "16px", 
                         fontStyle: "normal", 
@@ -201,8 +364,8 @@ function Catalog(props) {
                           </svg>
                         </span>
                       </p>
-                      <p className="mb-0"  style={{color: "#10101C", fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
-                      <p style={{color: "#10101C", fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
+                      <p className="mb-0"  style={{fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
+                      <p style={{fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
                     </div>
                   </div>
                 </div>

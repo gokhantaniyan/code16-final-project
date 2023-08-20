@@ -8,6 +8,7 @@ import News from './pages/News'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Delivery from './pages/Delivery'
+import './App.css'
 
 
 
