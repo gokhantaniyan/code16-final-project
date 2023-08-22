@@ -4,126 +4,216 @@
         "name": "Alex Van",
         "price": 150.00,
         "description": "Generation NEXT, 2022",
-        "image": "Images/Rectangle 26.svg"
+        "image": "Images/Rectangle 26.svg", 
+        "size": "medium",
+        "genre": "3dPaintings",
+        "material": "fluid-art",
+        "basis": "art-paper",
+        "color": "blue"
       },
       {
         "id": 2,
         "name": "Inna Sorokina",
         "price": 100.00,
         "description": "Himalayas, 2020",
-        "image": "Images/Rectangle 5.svg"
+        "image": "Images/Rectangle 5.svg",
+        "size": "small",
+        "genre": "scenery",
+        "material": "watercolor",
+        "basis": "canvas",
+        "color": "gold"
       },
       {
         "id": 3,
         "name": "Klim Petrov",
         "price": 100.00,
         "description": "Expectation, 2019",
-        "image": "Images/Rectangle 6.svg"
+        "image": "Images/Rectangle 6.svg",
+        "size": "large",
+        "genre": "portrait",
+        "material": "fluid-art",
+        "basis": "canvas",
+        "color": "blue"
       },
       {
         "id": 4,
         "name": "Ann Fox",
         "price": 80.00,
         "description": "Brut, 2022",
-        "image": "Images/Rectangle 15.svg"
+        "image": "Images/Rectangle 15.svg",
+        "size": "small",
+        "genre": "posters",
+        "material": "pastel",
+        "basis": "cardboard",
+        "color": "red"
       },
       {
         "id": 5,
         "name": "Alex Van",
         "price": 250.00,
         "description": "Purity, 2022",
-        "image": "Images/Rectangle 9.svg"
+        "image": "Images/Rectangle 9.svg",
+        "size": "large",
+        "genre": "scenery",
+        "material": "oil",
+        "basis": "art-paper",
+        "color": "beige"
       },
       {
         "id": 6,
         "name": "Antony Gribov",
         "price": 190.00,
         "description": "Confusion, 2022",
-        "image": "Images/Rectangle 8.svg"
+        "image": "Images/Rectangle 8.svg",
+        "size": "small",
+        "genre": "scenery",
+        "material": "acrylic",
+        "basis": "wood",
+        "color": "beige"
       },
       {
         "id": 7,
         "name": "Alex Van",
         "price": 150.00,
         "description": "Violin, 2022",
-        "image": "Images/картина 1.svg"
+        "image": "Images/1.svg",
+        "size": "large",
+        "genre": "stillLife",
+        "material": "oil",
+        "basis": "canvas",
+        "color": "beige"
       },
       {
         "id": 8,
         "name": "Oleg Kim",
         "price": 150.00,
         "description": "Anita, 2023",
-        "image": "Images/Rectangle 11.svg"
+        "image": "Images/Rectangle 11.svg",
+        "size": "large",
+        "genre": "portrait",
+        "material": "acrylic",
+        "basis": "canvas",
+        "color": "beige"
       },
       {
         "id": 9,
         "name": "Oleg Kim",
         "price": 100.00,
         "description": "Nina, 2022",
-        "image": "Images/Rectangle 12.svg"
+        "image": "Images/Rectangle 12.svg",
+        "size": "small",
+        "genre": "portrait",
+        "material": "acrylic",
+        "basis": "art-paper",
+        "color": "silver"
       },
       {
         "id": 10,
         "name": "Inna Sholts",
         "price": 170.00,
         "description": "Thoughts, 2019",
-        "image": "Images/Rectangle 29.svg"
+        "image": "Images/Rectangle 29.svg",
+        "size": "medium",
+        "genre": "abstraction",
+        "material": "pastel",
+        "basis": "cardboard",
+        "color": "gold"
       },
       {
         "id": 11,
         "name": "Ann Fox",
         "price": 200.00,
         "description": "I'm different, 2022",
-        "image": "Images/Rectangle 19.svg"
+        "image": "Images/Rectangle 19.svg",
+        "size": "large",
+        "genre": "collages",
+        "material": "acrylic",
+        "basis": "art-paper",
+        "color": "beige"
       },
       {
         "id": 12,
         "name": "Nik Sans",
         "price": 190.00,
         "description": "Beilive, 2022",
-        "image": "Images/Rectangle 17.svg"
+        "image": "Images/Rectangle 17.svg",
+        "size": "large",
+        "genre": "posters",
+        "material": "pastel",
+        "basis": "cardboard",
+        "color": "beige"
       },
       {
         "id": 13,
         "name": "Serjey Matushkin",
         "price": 300.00,
         "description": "The Buddha, 2022",
-        "image": "Images/Rectangle 23.svg"
+        "image": "Images/Rectangle 23.svg",
+        "size": "large",
+        "genre": "prints",
+        "material": "oil",
+        "basis": "glass",
+        "color": "silver"
       },
       {
         "id": 14,
         "name": "Antony Gribov",
         "price": 180.00,
         "description": "Heraldry, 2017",
-        "image": "Images/Rectangle 18.svg"
+        "image": "Images/Rectangle 18.svg",
+        "size": "medium",
+        "genre": "prints",
+        "material": "watercolor",
+        "basis": "wood",
+        "color": "red"
       },
       {
         "id": 15,
         "name": "BLO",
         "price": 150.00,
         "description": "Fire, 2018",
-        "image": "Images/Rectangle 22.svg"
+        "image": "Images/Rectangle 22.svg",
+        "size": "small",
+        "genre": "scenery",
+        "material": "fluid-art",
+        "basis": "canvas",
+        "color": "red"
       },
       {
         "id": 16,
         "name": "Ann Fox",
         "price": 195.00,
         "description": "Loneliness, 2020",
-        "image": "Images/Rectangle 24.svg"
+        "image": "Images/Rectangle 24.svg",
+        "size": "medium",
+        "genre": "abstraction",
+        "material": "watercolor",
+        "basis": "glass",
+        "color": "blue"
       },
       {
         "id": 17,
         "name": "Oleg Kim",
         "price": 100.00,
         "description": "Footprints, 2022",
-        "image": "Images/Rectangle 21.svg"
+        "image": "Images/Rectangle 21.svg",
+        "size": "small",
+        "genre": "stillLife",
+        "material": "fluid-art",
+        "basis": "canvas",
+        "color": "silver"
       },
       {
         "id": 18,
         "name": "Nik Sans",
         "price": 300.00,
         "description": "Approval, 2019",
-        "image": "Images/Rectangle 25.svg"
+        "image": "Images/Rectangle 25.svg",
+        "size": "large",
+        "genre": "abstraction",
+        "material": "pastel",
+        "basis": "art-paper",
+        "color": "green"
       }
 
 ]

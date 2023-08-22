@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // import './Catalog.css'
+
 
 function Catalog(props) {
   const [products, setProducts] = useState([]);
@@ -27,23 +29,28 @@ function Catalog(props) {
       filteredProducts = filteredProducts.filter(
         (product) => parseFloat(product.price) <= parseFloat(filters.price.max)
       );
-    }else if (filters.size) {
+    }
+    if (filters.size) {
       filteredProducts = filteredProducts.filter(
         (product) => product.size === filters.size
       );
-    }else if (filters.genre) {
+    }
+    if (filters.genre) {
       filteredProducts = filteredProducts.filter(
         (product) => product.genre === filters.genre
       );
-    }else if (filters.material) {
+    }
+    if (filters.material) {
       filteredProducts = filteredProducts.filter(
         (product) => product.material === filters.material
       );
-    }else if (filters.basis) {
+    }
+    if (filters.basis) {
       filteredProducts = filteredProducts.filter(
         (product) => product.basis === filters.basis
       );
-    }else if (filters.color) {
+    }
+    if (filters.color) {
       filteredProducts = filteredProducts.filter(
         (product) => product.color === filters.color
       );
@@ -111,7 +118,7 @@ function Catalog(props) {
               <input
                 type="checkbox"
                 value="abstraction"
-                checked={filters.size === "abstraction"}
+                checked={filters.genre === "abstraction"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "abstraction" ? "" : "abstraction" })}
               />
               <span className="filter-item">Abstraction</span>
@@ -120,7 +127,7 @@ function Catalog(props) {
               <input
                 type="checkbox"
                 value="scenery"
-                checked={filters.size === "scenery"}
+                checked={filters.genre === "scenery"}
                 onChange={() => setFilters({ ...filters, genre: filters.genre === "scenery" ? "" : "scenery" })}
               />
               <span className="filter-item">Scenery</span>
@@ -187,9 +194,9 @@ function Catalog(props) {
             <label>
               <input
                 type="checkbox"
-                value="Acrylic"
-                checked={filters.material === "Acrylic"}
-                onChange={() => setFilters({ ...filters, material: filters.material === "Acrylic" ? "" : "Acrylic" })}
+                value="acrylic"
+                checked={filters.material === "acrylic"}
+                onChange={() => setFilters({ ...filters, material: filters.material === "acrylic" ? "" : "acrylic" })}
               />
               <span className="filter-item">Acrylic</span>
             </label><br />
@@ -340,6 +347,25 @@ function Catalog(props) {
             </label>
           </div>
           {/* Color filter end */}
+          {/* Clear filter start */}
+          <div className="mt-3">
+            <span
+              className="clear-filter" 
+              onClick={() =>
+                setFilters({
+                  ...filters,
+                  size: "",
+                  genre: "",
+                  material: "",
+                  basis: "",
+                  color: "",
+                })
+              }
+            >
+              Clear Filters
+            </span>
+          </div>
+          {/* Clear filter end */}
           {/* Diğer filtre seçenekleri buraya eklenir */}
         </div>
         <div className="col-sm ">
@@ -347,27 +373,29 @@ function Catalog(props) {
             <div className="row">
               {getFilteredProducts().map((product) => (
                 <div key={product.id} className="row col-sm-4 mb-4">
+                 <Link style={{textDecoration: "none"}} to={`/product/${product.id}`}>
                   <div className="card mb-3 border-0" style={{width: "18rem"}}>
-                    <img src={product.image}  />
-                    <div className="card-body">
-                      <p className="mb-0 d-flex justify-content-between" style={{ 
-                        fontFamily: "Nunito Sans", 
-                        fontSize: "16px", 
-                        fontStyle: "normal", 
-                        fontWeight: "600", 
-                        lineHeight: "20px"}}
-                      >
-                        {product.name}
-                        <span className="d-flex justify-content-end">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                          </svg>
-                        </span>
-                      </p>
-                      <p className="mb-0"  style={{fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
-                      <p style={{fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
+                      <img src={product.image}  />
+                      <div className="card-body">
+                        <p className="mb-0 d-flex justify-content-between" style={{ 
+                          fontFamily: "Nunito Sans", 
+                          fontSize: "16px", 
+                          fontStyle: "normal", 
+                          fontWeight: "600", 
+                          lineHeight: "20px"}}
+                        >
+                          {product.name}
+                          <span className="d-flex justify-content-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                          </span>
+                        </p>
+                        <p className="mb-0"  style={{fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
+                        <p style={{fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
+                      </div>
                     </div>
-                  </div>
+                 </Link>
                 </div>
               ))}
             </div>
