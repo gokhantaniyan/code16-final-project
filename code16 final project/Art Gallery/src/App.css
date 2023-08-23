@@ -1,4 +1,30 @@
-/* filter css */
+/* Home css */
+.home-item{
+    position: absolute;  
+    color: #10101C; 
+    font-size: 12px; 
+    font-family: 'Nunito Sans'; 
+    font-weight: 400; 
+    line-height: 20px; 
+}
+
+/* Nav css */
+.account{
+    width: 24px;
+    height: 24px;
+    left: 992px;
+    top: 2px;
+    position: absolute;
+}
+.basket {
+    width: 24px;
+    height: 24px;
+    left: 1036px;
+    top: 2px;
+    position: absolute;
+}
+
+/* catalog - filter css */
 .filter-header{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
@@ -22,4 +48,50 @@
     line-height: 20px;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.product-item{
+    font-family: "Nunito Sans", serif;
+    font-size: 16px; 
+    font-style: normal; 
+    font-weight: 600; 
+    line-height: 20px;  
+}
+
+/* ProductDetails css */
+.add-favorites{
+    margin-left: 888px;
+    display: inline-flex;
+    padding: 12px 34px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #FC8512;
+    background-color: white;
+}
+.detail-image{
+    width: 520px;
+    height: 400px;
+}
+.details-item{
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.add-basket{
+    display: inline-flex;
+    padding: 12px 34px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #FC8512;
+    background: #FC8512;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
 }

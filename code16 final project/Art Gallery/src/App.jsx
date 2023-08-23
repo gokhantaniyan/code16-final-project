@@ -9,7 +9,7 @@ import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Delivery from './pages/Delivery'
 import './App.css'
-import ProductDetails from './components/ProductDetails'
+import ProductDetails from './pages/ProductDetails'
 
 
 

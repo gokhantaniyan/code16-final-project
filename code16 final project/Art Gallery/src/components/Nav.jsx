@@ -55,7 +55,9 @@ function Nav(props) {
                 </div>
               </div>
               <a className="nav-item text-dark text-uppercase" href="#" style={{ 
-                left: '433px', top: '12px', position: 'absolute', 
+                left: '433px', 
+                top: '12px', 
+                position: 'absolute', 
                 fontSize: '14px', 
                 fontFamily: 'Nunito Sans', 
                 fontWeight: '400', 
@@ -65,7 +67,9 @@ function Nav(props) {
               </a>
               <div className="navbar-nav">
                 <NavLink className="nav-link text-dark" to="/catalog" style={{ 
-                  left: '544px', top: '2px', position: 'absolute', 
+                  left: '544px', 
+                  top: '2px', 
+                  position: 'absolute', 
                   fontSize: '14px', 
                   fontFamily: 'Nunito Sans', 
                   fontWeight: '400', 
@@ -74,7 +78,9 @@ function Nav(props) {
                     Catalog
                 </NavLink>
                 <NavLink className="nav-link text-dark" to="/about" style={{ 
-                  left: '655px', top: '2px', position: 'absolute', 
+                  left: '655px', 
+                  top: '2px', 
+                  position: 'absolute', 
                   fontSize: '14px', 
                   fontFamily: 'Nunito Sans', 
                   fontWeight: '400', 
@@ -83,7 +89,9 @@ function Nav(props) {
                     About
                 </NavLink>
                 <NavLink className="nav-link text-dark" to="/news" style={{ 
-                  left: '756px', top: '2px', position: 'absolute', 
+                  left: '756px', 
+                  top: '2px', 
+                  position: 'absolute', 
                   fontSize: '14px', 
                   fontFamily: 'Nunito Sans', 
                   fontWeight: '400', 
@@ -92,7 +100,9 @@ function Nav(props) {
                     News
                 </NavLink>
                 <NavLink className="nav-link text-dark" to="/contact" style={{ 
-                  left: '855px', top: '2px', position: 'absolute', 
+                  left: '855px', 
+                  top: '2px', 
+                  position: 'absolute', 
                   fontSize: '14px', 
                   fontFamily: 'Nunito Sans', 
                   fontWeight: '400', 
@@ -102,7 +112,7 @@ function Nav(props) {
                 </NavLink>
               </div>
               
-              <div className="Account" style={{ width: '24px', height: '24px', left: '1036px', top: '2px', position: 'absolute' }}>
+              <div className="basket">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M23.8641 6.48525C23.795 6.38442 23.7033 6.30212 23.5967 6.24529C23.4902 6.18846 23.3718 
                   6.15875 23.2518 6.15867H7.25438L6.04344 1.87074C5.56856 0.182276 4.44014 0 3.97732 
@@ -117,7 +127,7 @@ function Nav(props) {
                 />
                 </svg>
               </div>
-              <div className="Basket" style={{ width: '24px', height: '24px', left: '992px', top: '2px', position: 'absolute' }}>
+              <div className="account">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path fillRule="evenodd" clipRule="evenodd" d="M15.5 6C15.5 7.933 13.933 9.5 12 9.5C10.067 
                   9.5 8.49998 7.933 8.49998 6C8.49998 4.067 10.067 2.5 12 2.5C13.933 2.5 15.5 4.067 15.5 6ZM17 6C17 

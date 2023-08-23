@@ -24,13 +24,7 @@ function News(props) {
               <div className="card mb-3 border-0" style={{width: "18rem"}}>
                 <img src={product.image}  />
                 <div className="card-body">
-                  <p className="mb-0 d-flex justify-content-between" style={{
-                    fontFamily: "Nunito Sans", 
-                    fontSize: "16px", 
-                    fontStyle: "normal", 
-                    fontWeight: "600", 
-                    lineHeight: "20px"}}
-                  >
+                  <p className="product-item mb-0 d-flex justify-content-between">
                     {product.name}
                     <span className="d-flex justify-content-end">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
@@ -39,7 +33,7 @@ function News(props) {
                     </span>
                   </p>
                   <p className="mb-0"  style={{fontFamily: "Nunito Sans", fontSize: "14px", fontStyle: "normal", fontWeight: "400", lineHeight: "20px"}}>{product.description}</p>
-                  <p style={{fontFamily: "Nunito Sans", fontSize: "16px", fontStyle: "normal", fontWeight: "600", lineHeight: "20px"}}>${product.price}</p>
+                  <p className="product-item">${product.price}</p>
                 </div>
               </div>
             </div>
