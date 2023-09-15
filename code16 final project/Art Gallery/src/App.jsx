@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 import Delivery from './pages/Delivery'
 import './App.css'
 import ProductDetails from './pages/ProductDetails'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 
 
@@ -27,6 +29,8 @@ function App() {
       <Route path='/news' element={<News />} />
       <Route path='/delivery' element={<Delivery />}/>
       <Route path='/contact' element={<Contact />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
      </Routes>
      <Footer />
     </>

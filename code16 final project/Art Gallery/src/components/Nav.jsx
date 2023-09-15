@@ -1,6 +1,7 @@
 import { FaSearch } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import NavItem from './NavItem';
+import Login from '../pages/Login';
 
 function Nav(props) {
  return (
@@ -127,7 +128,7 @@ function Nav(props) {
                 />
                 </svg>
               </div>
-              <div className="account">
+              <NavLink className="account" to="/login" element={<Login />} >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path fillRule="evenodd" clipRule="evenodd" d="M15.5 6C15.5 7.933 13.933 9.5 12 9.5C10.067 
                   9.5 8.49998 7.933 8.49998 6C8.49998 4.067 10.067 2.5 12 2.5C13.933 2.5 15.5 4.067 15.5 6ZM17 6C17 
@@ -140,7 +141,7 @@ function Nav(props) {
                   12 12 12C9.34782 12 6.80428 13.0536 4.92891 14.9289C3.23277 16.6251 2.20886 18.8678 2.02864 21.2431Z" fill="#5A5A5F"
                 />
                 </svg>
-              </div>
+              </NavLink>
             </div>
           </div>
         </div>
